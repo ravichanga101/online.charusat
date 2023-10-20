@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- Mirrored from online.charusat.ac.in/my-charusat by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 11:23:56 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Student Portal | Login</title>
+    <link
+      rel="shortcut icon"
+      href="my-charusat/clients/charusat/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="my-charusat/css/styles.min.css" />
+    <link rel="stylesheet" href="my-charusat/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="my-charusat/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="my-charusat/css/custom.min.css" />
+    <link rel="stylesheet" href="my-charusat/css/intltelinput.min.css" />
+    <link rel="stylesheet" href="my-charusat/css/jquery.fileupload.min.css" />
+    <link
+      rel="stylesheet"
+      href="my-charusat/clients/charusat/css/root.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="my-charusat/js/jquery-3.6.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="my-charusat/js/jquery-ui.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="my-charusat/js/intltelinput.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="my-charusat/js/jquery.fileupload.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <!--TOP HEADER-->
+      <div b-p9vqe4ivsf class="container header-top">
+        <div
+          b-p9vqe4ivsf
+          class="d-flex flex-row justify-content-center justify-content-lg-start align-items-center py-2"
+        >
+          <a b-p9vqe4ivsf class="navbar-brand p-2" href="index.html">
+            <img
+              b-p9vqe4ivsf
+              src="my-charusat/clients/charusat/img/logo.svg"
+              style="max-width: 228px"
+              height="80"
+              class="d-inline-block align-top"
+              alt="Student Portal logo"
+            />
+          </a>
+        </div>
+      </div>
+      <!--END TOP HEADER-->
+    </header>
+
+    <!-- BREADCRUMS-->
+    <div
+      class="container-fluid d-none d-lg-block bg-light m-0 border-bottom border-top"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb bg-light m-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">My Student Portal</li>
+              </ol>
+            </nav>
+          </div>
+          <!-- ONLY FOR DEBUG -->
+          <div class="col-md-6">
+            <div
+              class="d-flex flex-row-reverse justify-content-start py-1"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ////// END BREADCRUMS-->
+
+    <!-- DISEÑO DE FRAN -->
+    <div class="container d-flex flex-column">
+      <div
+        class="d-flex flex-column flex-md-row justify-content-center flex-md-row-reverse mt-4 mb-4"
+      >
+        <form
+          class="col-12 col-lg-4 col-md-8 bg-white shadow border rounded p-5"
+          method="post"
+          action="https://online.charusat.ac.in/my-charusat/login"
+          id="LoginForm"
+          enctype="multipart/form-data"
+        >
+          <p class="m-0">Login to</p>
+          <h3 class="text-primary"><b>My Student Portal</b></h3>
+          <hr />
+          <!-- EMAIL INPUT -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="Email">Email</label>
+            <input
+              type="email"
+              name="Email"
+              id="Email"
+              placeholder="Enter your email"
+              class="form-control"
+              value=""
+            />
+          </div>
+
+          <!-- PASWORD INPUT -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="Clave">Password</label>
+            <input
+              type="password"
+              name="Clave"
+              id="Clave"
+              placeholder="Enter your password"
+              class="form-control"
+              value=""
+            />
+            <div class="col-12 mt-2">
+              <!-- FORGOT PASWORD LINK -->
+              <a class="link" href="my-charusat/reset-password.html"
+                >Forgot your password?</a
+              >
+            </div>
+          </div>
+
+          <!-- SUBMIT BUTTON -->
+          <button
+            type="submit"
+            class="btn btn-primary w-100 mb-4"
+            name="send"
+            id="send"
+            onclick="$(this).attr('disabled', true);this.form.submit();"
+          >
+            Login
+          </button>
+        </form>
+        <!-- IMG SIDE LOGIN -->
+        <div
+          class="d-none d-lg-flex flex-column justify-content-end col-md-6 col-lg-8 text-white mi-admin rounded border"
+        >
+          <h1 class="display-5 p-5 m-0 align-items-end">
+            We welcome you to the student self-management portal
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- /////// END DISEÑO DE FRAN -->
+
+    <!--FOOTER-->
+    <footer b-p9vqe4ivsf class="p-0 border-top">
+      <!--FOOTER BOTTOM-->
+      <div b-p9vqe4ivsf class="container-fluid bg-primary-dark">
+        <div
+          b-p9vqe4ivsf
+          class="container d-flex flex-column flex-xl-row text-white pt-3 pb-3"
+        >
+          <div
+            b-p9vqe4ivsf
+            class="col-12 col-xl-6 d-flex justify-content-start"
+          ></div>
+          <div
+            b-p9vqe4ivsf
+            class="col-12 col-xl-6 d-flex flex-xl-row flex-column justify-content-center justify-content-xl-end"
+          >
+            Copyright © 2023. All rights reserved.
+          </div>
+        </div>
+      </div>
+      <!--END FOOTER BOTTOM-->
+    </footer>
+    <!--END FOOTER-->
+    <script
+      type="text/javascript"
+      src="my-charusat/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="my-charusat/js/showmenudesk.min.js"
+    ></script>
+  </body>
+
+  <!-- Mirrored from online.charusat.ac.in/my-charusat by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 11:24:00 GMT -->
+</html>
